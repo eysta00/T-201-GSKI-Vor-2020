@@ -10,8 +10,28 @@ def print_to_screen(head):
     else:
         print("")
 
-def palindrome(head):
-    return False
+def palindrome(head, list_copy = None):
+    if list_copy == None:
+        if head == None or head.next == None: # check á minna eða sama og 1
+            return True
+
+        list_copy = head # geyma fremsta hausinn
+    elif head.next == None: 
+        return list_copy.next, True
+
+    new_list_copy, pal_bool = palindrome(head.next, list_copy)
+    
+    if pal_bool == True and head.data == new_list_copy.data:
+        pal_bool = True
+    else:
+        pal_bool = False
+   
+   
+    if head == list_copy: # Bera bendla saman
+        return pal_bool  # skila bool á seinsta kalli
+
+    return new_list_copy.next, pal_bool
+    
 
 if __name__ == "__main__":
 
