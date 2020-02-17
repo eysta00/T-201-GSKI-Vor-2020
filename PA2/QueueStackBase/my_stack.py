@@ -5,7 +5,7 @@ class Stack:
     def __init__(self, type: str):
         if type == "array":
             self.PEZ = ArrayDeque()
-        elif type == "linked"
+        elif type == "linked":
             self.PEZ = LinkedList()
         
     def push(self, val):
