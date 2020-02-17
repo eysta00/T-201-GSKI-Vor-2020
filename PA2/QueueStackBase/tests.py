@@ -33,7 +33,7 @@ print(deque.pop_back())
 print("container of size: " + str(deque.get_size()) + ":")
 print(deque)
 
-
+"""
 print("\nTESTING LINKED_LIST\n")
 
 lis = LinkedList()
@@ -115,3 +115,4 @@ print(stack.pop())
 print(stack.pop())
 print(stack.pop())
 print("the data structure is of size: " + str(stack.get_size()))
+"""
