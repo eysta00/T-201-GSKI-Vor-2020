@@ -14,7 +14,7 @@ class LinkedList(object):
         '''Add a value to back(tail) of list '''
         new_tail = Node(val)
         if self.is_empty(): # The only node is head and tail
-            self.tail , self.head = new_tail, new_tail
+            self.tail, self.head = new_tail, new_tail
         else:
             self.tail.next = new_tail
             self.tail = new_tail
