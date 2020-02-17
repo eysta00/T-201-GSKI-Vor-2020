@@ -14,7 +14,7 @@ class LinkedList: #():
         '''Add a value to back(tail) of list '''
         new_tail = Node(val)
         if self.is_empty(): # The only node is head and tail
-            self.tail, self.head = new_tail
+            self.tail, self.head = new_tail, new_tail
         else:
             self.tail.next = new_tail
             self.tail = new_tail
@@ -45,16 +45,15 @@ class LinkedList: #():
     def is_empty(self):
         return self.size < 1
 
-    def __str__():
+    def __str__(self):
         '''Return a string of all items '''
         ret_str = ""
         node = self.head
-        
+        if node == None:
+            return ret_str
         while node.next != None:
             ret_str += str(node.data) + " "
             node = node.next
-        else:
-            return ret_str
 
         return ret_str + str(node.data)
             
