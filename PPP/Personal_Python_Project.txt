@@ -1,0 +1,4 @@
+Hugmyndin á verkefninu er að gera useless play button, með eitthvað response og eftir að það er ýtt x mörgum
+sinnum á hann þá er spurt um að breyta settings, aðalatriði er að það sé volume slider.
+það er kúla á volume slider sem getur dottið af og hún skoppar um og hægt er að halda á henni.
+Ef þú hittir önnur options þá gerist kanski eitthvað annað á meðan.
