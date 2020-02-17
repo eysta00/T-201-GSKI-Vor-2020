@@ -10,9 +10,7 @@ class ArrayDeque():
     def push_back(self, value):
         """Takes a parameter and adds its value to the back of the deque"""
         if self._capacity == self._size:
-            print ("BEFORE RESIZE " + str(deque), self._arr)
             self._resize()
-            print ("AFTER RESIZE " + str(deque), self._arr)
         self._arr[self._last] = value
         self._last = (self._last + 1) % self._capacity
         self._size += 1
@@ -20,9 +18,7 @@ class ArrayDeque():
     def push_front(self, value):
         """Takes a parameter and adds its value to the front of the deque"""
         if self._capacity == self._size:
-            print ("BEFORE RESIZE " + str(deque), self._arr)
             self._resize()
-            print ("AFTER RESIZE " + str(deque), self._arr)
         self._first = (self._first - 1) % self._capacity
         self._arr[self._first] = value
         self._size += 1
@@ -56,7 +52,6 @@ class ArrayDeque():
         """Returns the size of the deque"""
         return self._size
 
-
     def __len__(self):
         return self._size
 
@@ -81,39 +76,11 @@ class ArrayDeque():
         if self._last == 0 or self._last > self._first:
             for i in range(self._first, self._first + self._size - 1):
                 a_str += str(self._arr[i]) + " "
+            a_str += str(self._arr[self._last -1])
         else:
             for i in range(self._first, self._capacity):
                 a_str += str(self._arr[i]) + " "
             for i in range(self._last - 1):
                 a_str += str(self._arr[i]) + " "
-        return a_str + str(self._arr[self._last -1])
-
-if __name__ == "__main__":
-    print("\nTESTING ARRAY_DEQUE\n")
-    deque = ArrayDeque()
-    deque.push_back(3)
-    deque.push_back(1)
-    deque.push_back(6)
-    deque.push_back(9)
-    print("container of size: " + str(deque.get_size()) + ":")
-    print(deque)
-    print(deque.pop_back())
-    print(deque.pop_back())
-    print("container of size: " + str(deque.get_size()) + ":")
-    print(deque)
-    deque.push_front(11)
-    deque.push_front(16)
-    deque.push_front(13)
-    print("container of size: " + str(deque.get_size()) + ":")
-    print(deque)
-    print(deque.pop_front())
-    print(deque.pop_front())
-    print(deque.pop_front())
-    print("container of size: " + str(deque.get_size()) + ":")
-    print(deque)
-    print(deque.pop_front())
-    print(deque.pop_back())
-    print(deque.pop_front())
-    print(deque.pop_back())
-    print("container of size: " + str(deque.get_size()) + ":")
-    print(deque)
+            a_str += str(self._arr[self._last -1])
+        return a_str
