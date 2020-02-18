@@ -15,14 +15,14 @@ def palindrome(head, list_copy = None):
         if head == None or head.next == None: # check á minna eða sama og 1
             return True
 
-        list_copy = head # geyma fremsta hausinn
+        list_copy = head # geyma fremsta hausinn (copy)
     elif head.next == None: 
         return list_copy.next, True
 
     new_list_copy, pal_bool = palindrome(head.next, list_copy)
     
     if pal_bool == True and head.data == new_list_copy.data:
-        pal_bool = True
+        pal_bool = True # check á eins data
     else:
         pal_bool = False
    
