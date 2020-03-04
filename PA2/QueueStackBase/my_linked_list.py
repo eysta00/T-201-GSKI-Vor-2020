@@ -57,5 +57,3 @@ class LinkedList(object):
             return ret_str + str(node.data)
         except:
             return ret_str
-            
-

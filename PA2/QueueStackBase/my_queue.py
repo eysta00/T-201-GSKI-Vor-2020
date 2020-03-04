@@ -4,19 +4,23 @@ from my_linked_list import LinkedList
 class Queue:
     def __init__(self, type: str):
         if type == "array":
-            self.the_queue = ArrayDeque()
+            self.my_queue = ArrayDeque()
         elif type == "linked":
-            self.the_queue = LinkedList()
+            self.my_queue = LinkedList()
 
     def add(self, val):
-        self.the_queue.push_back(val)
+        self.my_queue.push_back(val)
 
     def remove(self):
-        if self.the_queue.is_empty():
+        if self.my_queue.is_empty():
             return None
         else:
+<<<<<<< HEAD
             return self.the_queue.pop_front()
+=======
+            return self.my_queue.pop_front()
+>>>>>>> 7b2965e1ad49993631423deed8ea5fe01203167d
     
     def get_size(self):
-        return self.the_queue.get_size()
+        return self.my_queue.get_size()
     
