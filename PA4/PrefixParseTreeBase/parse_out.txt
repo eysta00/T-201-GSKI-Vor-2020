@@ -1,0 +1,307 @@
+PREFIX: + 2 0
+INFIX: (2 + 0)
+POSTFIX: 2 0 +
+The value of the tree is: 2
+SIMPLIFIED:
+PREFIX: 2
+INFIX: 2
+POSTFIX: 2
+
+
+
+PREFIX: + 0 2
+INFIX: (0 + 2)
+POSTFIX: 0 2 +
+The value of the tree is: 2
+SIMPLIFIED:
+PREFIX: 2
+INFIX: 2
+POSTFIX: 2
+
+
+
+PREFIX: + 5 6
+INFIX: (5 + 6)
+POSTFIX: 5 6 +
+The value of the tree is: 11
+SIMPLIFIED:
+PREFIX: 11
+INFIX: 11
+POSTFIX: 11
+
+
+
+PREFIX: - 3 5
+INFIX: (3 - 5)
+POSTFIX: 3 5 -
+The value of the tree is: -2
+SIMPLIFIED:
+PREFIX: -2  
+INFIX: ( -2 )
+POSTFIX:   -2
+
+
+
+PREFIX: + 3 4
+INFIX: (3 + 4)
+POSTFIX: 3 4 +
+The value of the tree is: 7
+SIMPLIFIED:
+PREFIX: 7
+INFIX: 7
+POSTFIX: 7
+
+
+
+PREFIX: + 3 5
+INFIX: (3 + 5)
+POSTFIX: 3 5 +
+The value of the tree is: 8
+SIMPLIFIED:
+PREFIX: 8
+INFIX: 8
+POSTFIX: 8
+
+
+
+PREFIX: - 9 6
+INFIX: (9 - 6)
+POSTFIX: 9 6 -
+The value of the tree is: 3
+SIMPLIFIED:
+PREFIX: 3
+INFIX: 3
+POSTFIX: 3
+
+
+
+PREFIX: + 6 4
+INFIX: (6 + 4)
+POSTFIX: 6 4 +
+The value of the tree is: 10
+SIMPLIFIED:
+PREFIX: 10
+INFIX: 10
+POSTFIX: 10
+
+
+
+PREFIX: - 2 2
+INFIX: (2 - 2)
+POSTFIX: 2 2 -
+The value of the tree is: 0
+SIMPLIFIED:
+PREFIX: 0
+INFIX: 0
+POSTFIX: 0
+
+
+
+PREFIX: + 1 6
+INFIX: (1 + 6)
+POSTFIX: 1 6 +
+The value of the tree is: 7
+SIMPLIFIED:
+PREFIX: 7
+INFIX: 7
+POSTFIX: 7
+
+
+
+PREFIX: - 1 0
+INFIX: (1 - 0)
+POSTFIX: 1 0 -
+The value of the tree is: 1
+SIMPLIFIED:
+PREFIX: 1
+INFIX: 1
+POSTFIX: 1
+
+
+
+PREFIX: - 9 1
+INFIX: (9 - 1)
+POSTFIX: 9 1 -
+The value of the tree is: 8
+SIMPLIFIED:
+PREFIX: 8
+INFIX: 8
+POSTFIX: 8
+
+
+
+PREFIX: - 9 5
+INFIX: (9 - 5)
+POSTFIX: 9 5 -
+The value of the tree is: 4
+SIMPLIFIED:
+PREFIX: 4
+INFIX: 4
+POSTFIX: 4
+
+
+
+PREFIX: + 2 2
+INFIX: (2 + 2)
+POSTFIX: 2 2 +
+The value of the tree is: 4
+SIMPLIFIED:
+PREFIX: 4
+INFIX: 4
+POSTFIX: 4
+
+
+
+PREFIX: + 2 9
+INFIX: (2 + 9)
+POSTFIX: 2 9 +
+The value of the tree is: 11
+SIMPLIFIED:
+PREFIX: 11
+INFIX: 11
+POSTFIX: 11
+
+
+
+PREFIX: - - 5 1 7
+INFIX: ((5 - 1) - 7)
+POSTFIX: 5 1 - 7 -
+The value of the tree is: -3
+SIMPLIFIED:
+PREFIX: -3  
+INFIX: ( -3 )
+POSTFIX:   -3
+
+
+
+PREFIX: - 5 - 8 9
+INFIX: (5 - (8 - 9))
+POSTFIX: 5 8 9 - -
+The value of the tree is: 6
+SIMPLIFIED:
+PREFIX: - 5 -1  
+INFIX: (5 - ( -1 ))
+POSTFIX: 5   -1 -
+
+
+
+PREFIX: + 9 4
+INFIX: (9 + 4)
+POSTFIX: 9 4 +
+The value of the tree is: 13
+SIMPLIFIED:
+PREFIX: 13
+INFIX: 13
+POSTFIX: 13
+
+
+
+PREFIX: + + 0 4 3
+INFIX: ((0 + 4) + 3)
+POSTFIX: 0 4 + 3 +
+The value of the tree is: 7
+SIMPLIFIED:
+PREFIX: 7
+INFIX: 7
+POSTFIX: 7
+
+
+
+PREFIX: + + 7 7 3
+INFIX: ((7 + 7) + 3)
+POSTFIX: 7 7 + 3 +
+The value of the tree is: 17
+SIMPLIFIED:
+PREFIX: 17
+INFIX: 17
+POSTFIX: 17
+
+
+
+PREFIX: + - 0 7 3
+INFIX: ((0 - 7) + 3)
+POSTFIX: 0 7 - 3 +
+The value of the tree is: -4
+SIMPLIFIED:
+PREFIX: + -7   3
+INFIX: (( -7 ) + 3)
+POSTFIX:   -7 3 +
+
+
+
+PREFIX: + 8 * 8 3
+INFIX: (8 + (8 * 3))
+POSTFIX: 8 8 3 * +
+The value of the tree is: 32
+SIMPLIFIED:
+PREFIX: 32
+INFIX: 32
+POSTFIX: 32
+
+
+
+PREFIX: * + 7 0 * 6 2
+INFIX: ((7 + 0) * (6 * 2))
+POSTFIX: 7 0 + 6 2 * *
+The value of the tree is: 84
+SIMPLIFIED:
+PREFIX: 84
+INFIX: 84
+POSTFIX: 84
+
+
+
+PREFIX: + 6 8
+INFIX: (6 + 8)
+POSTFIX: 6 8 +
+The value of the tree is: 14
+SIMPLIFIED:
+PREFIX: 14
+INFIX: 14
+POSTFIX: 14
+
+
+
+PREFIX: - 5 0
+INFIX: (5 - 0)
+POSTFIX: 5 0 -
+The value of the tree is: 5
+SIMPLIFIED:
+PREFIX: 5
+INFIX: 5
+POSTFIX: 5
+
+
+
+PREFIX: + 1 0
+INFIX: (1 + 0)
+POSTFIX: 1 0 +
+The value of the tree is: 1
+SIMPLIFIED:
+PREFIX: 1
+INFIX: 1
+POSTFIX: 1
+
+
+
+PREFIX: + x 6
+INFIX: (x + 6)
+POSTFIX: x 6 +
+The value of the tree is: There is an unknown value in the tree
+SIMPLIFIED:
+PREFIX: + x 6
+INFIX: (x + 6)
+POSTFIX: x 6 +
+
+
+
+PREFIX: + x 6
+The value of x if the root_value is 13 is: None
+
+
+
+PREFIX: solve  
+INFIX: ( solve )
+POSTFIX:   solve
+The value of the tree is: There is an unknown value in the tree
+SIMPLIFIED:

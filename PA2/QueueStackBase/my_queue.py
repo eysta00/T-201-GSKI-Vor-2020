@@ -15,11 +15,7 @@ class Queue:
         if self.my_queue.is_empty():
             return None
         else:
-<<<<<<< HEAD
             return self.the_queue.pop_front()
-=======
-            return self.my_queue.pop_front()
->>>>>>> 7b2965e1ad49993631423deed8ea5fe01203167d
     
     def get_size(self):
         return self.my_queue.get_size()

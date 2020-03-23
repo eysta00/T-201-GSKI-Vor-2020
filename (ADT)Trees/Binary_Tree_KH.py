@@ -87,6 +87,23 @@ class BinaryTree:
         value = input("Insert: ")
         num = self._value_counter_recur(value, self.root)
         print(value, "Appeared", num, "Times")
+    
+    def _replace_val_recur(self, node, val_1, val_2):
+        if node == None:
+            return
+        self._replace_val_recur(node.left, val_1, val_2)
+        self._replace_val_recur(node.right, val_1, val_2)
+
+        if node.data == val_1:
+            node.data = val_2
+        return
+    
+    def replace_val(self):
+        print("Value repalcer")
+        val_1 = input("The value to be replaced: ")
+        val_2 = input("The value that takes it's place: ")
+        self._replace_val_recur(self.root, val_1, val_2)
+        self.print_postorder()   
 
 if __name__ == "__main__":
     bt = BinaryTree()
@@ -95,3 +112,4 @@ if __name__ == "__main__":
     bt.print_preorder()
     bt.print_inorder()
     bt.print_postorder()
+    bt.replace_val()
