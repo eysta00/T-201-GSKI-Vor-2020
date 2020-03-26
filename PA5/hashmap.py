@@ -74,7 +74,6 @@ class Bucket:
                 return
         raise NotFoundException('The key ' + str(k) + ' was not found')
 
-
     def __getitem__(self, k): # Return data
         ''' Return data of a key '''
         for item in self:
